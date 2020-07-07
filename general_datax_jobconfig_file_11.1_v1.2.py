@@ -213,7 +213,7 @@ def write_part_table_job(oracle_connect,mysql_connect,sql_statment,owner,jobconf
             f.write(job)
         insert_job(mysql_connect,table_part_name,owner,cnfName)
         print table_part_name,cnfName
-
+ 
 def write_normal_table_job(oracle_connect,mysql_connect,sql_statment,owner,jobconfig):
     table_column_dict=get_table_column_dict(oracle_connect)
     parallel_sql_dict=get_sql_dict(oracle_connect,sql_statment)
